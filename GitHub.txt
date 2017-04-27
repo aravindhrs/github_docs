@@ -1,0 +1,91 @@
+GITHUB:
+Keep tracks of changes in code
+Synchronizes code between different peoples
+Revert back to older versions of work
+Test the changes to code without losing the original
+Git tracks changes
+
+
+Project=Repository(repo)
+Add(staging)
+commit
+push
+pull
+
+Step-1: Create folders & repository(Project) in github portal
+Step-2: Config user globally(username/email) in system using shell
+git config --global user.name "aravindhrs"
+git config --global user.email "aravindhrs@outlook.com"
+Step-3: Create local repository, cd directory to the repository and create required folders.
+Step-4: Initialize git for the local repository
+git init
+
+(or)- ignore step-3,4 above and follow below 3,4 instead
+
+Step-3: Clone the repository(checkout or copy, i.e, for first time copying)
+git clone <repo url>
+
+Step-4: Create a file, Apply git status command to check list of files created or modified
+git status
+
+Step-5: Apply git add command to add(adds the file to staging area) those files in local git repository(cloned)
+git add filename
+
+Step-6: Apply git commit command to save the changes in local git repository(cloned)
+git commit -m "1st commit"
+After commit, if u remove filename from local git repo, and want to restore means,
+git checkout -- .
+
+Step-7: Apply git push command to save the changes to remote git repository
+git push 
+
+Step-8: If any changes done in your local repo, follow Step-4,5(if new file added),6,7
+
+Step-9: If you want to create another branch, apply git branch branchname, will create new branch
+git branch <branchname>
+
+Step-10: Apply git branch command to list all branches and highlight the branch currently working on it.
+git branch
+git branch -a
+
+Step-11: If you want to switch between branches apply git --checkout branchname
+git checkout branchname
+
+Step-12: If you need to update your local repo from remote repository, apply git pull command
+git pull origin master
+git --version gives latest git version
+
+Step-13: To check the remote repo path:
+git remote -v
+
+Step-14: To set remote path for pushing changes to remote repo,
+git remote set-url origin "remote repo url" 
+
+Step-15:Now push the changes to remote repo(github portal) branch, before push apply pull command to get updated from remote repo
+git pull origin master
+git push origin master
+git push -u origin <branchname>
+here origin specifies url of remote repository and master is branch
+
+Step-16: If you want to remove files from staging area,
+git reset
+git reset <file-name>
+
+Step-17: To check git logs
+git log
+
+Step-18: To check changes in local repo,
+git diff
+
+Step-19: Merging the branch : if you want to merge branch(any local branch) to master branch,
+git checkout master
+git pull master origin
+git branch --merged
+git merge <branchname(local branch need to merged with master)>
+git push origin master
+
+Step-20:Deleting the branch,
+git branch -d <branchname>
+git branch -a
+git push origin --delete <branchname>
+ 
