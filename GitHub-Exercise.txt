@@ -1,0 +1,568 @@
+aravindh@ARAVINDH-RS MINGW64 ~
+$ git --version
+git version 2.9.0.windows.1
+
+aravindh@ARAVINDH-RS MINGW64 ~
+$ git add --help
+Launching default browser to display HTML ...
+
+aravindh@ARAVINDH-RS MINGW64 ~
+$ cd
+
+aravindh@ARAVINDH-RS MINGW64 ~
+$ cd /d/GitHub
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git config --global user.name "aravindhrs"
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git config --global user.email "aravindhrs@outlook.com"
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git init
+Reinitialized existing Git repository in D:/GitHub/.git/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git clone https://github.com/aravindhrs/Microservices.git
+Cloning into 'Microservices'...
+remote: Counting objects: 50, done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 50 (delta 3), reused 50 (delta 3), pack-reused 0
+Unpacking objects: 100% (50/50), done.
+Checking connectivity... done.
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'aravindhrs_git/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Microservices/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git add index - Copy.jsp
+fatal: pathspec 'index' did not match any files
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'aravindhrs_git/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Microservices/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ git add index-Copy.jsp
+fatal: pathspec 'index-Copy.jsp' did not match any files
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub (master)
+$ cd /d/GitHub/Microservices/Spring4MVC/src/main/webapp/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git add index-Copy.jsp
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index-Copy.jsp
+
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git commit -m "1st commit"
+[master 3fa68b0] 1st commit
+ 1 file changed, 13 insertions(+)
+ create mode 100644 Spring4MVC/src/main/webapp/index-Copy.jsp
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git checkout -- .
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git push
+Username for 'https://github.com': aravindhrs
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 798 bytes | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/aravindhrs/Microservices.git
+   6b7bd4f..3fa68b0  master -> master
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ cd
+
+aravindh@ARAVINDH-RS MINGW64 ~
+$ git branch testbranch
+fatal: Not a git repository (or any of the parent directories): .git
+
+aravindh@ARAVINDH-RS MINGW64 ~
+$ /d/GitHub/Microservices
+bash: /d/GitHub/Microservices: Is a directory
+
+aravindh@ARAVINDH-RS MINGW64 ~
+$ cd /d/GitHub/Microservices
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git branch testbranch
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git branch
+* master
+  testbranch
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git branch -a
+* master
+  testbranch
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git --checkout testbranch
+Unknown option: --checkout
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git checkout testbranch
+Switched to branch 'testbranch'
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (testbranch)
+$ git branch
+  master
+* testbranch
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (testbranch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git branch
+* master
+  testbranch
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git pull origin master
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/aravindhrs/Microservices
+ * branch            master     -> FETCH_HEAD
+   3fa68b0..e4cf650  master     -> origin/master
+Updating 3fa68b0..e4cf650
+Fast-forward
+ Spring4MVC/src/main/webapp/testfile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Spring4MVC/src/main/webapp/testfile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git --version
+git version 2.9.0.windows.1
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git add --help
+Launching default browser to display HTML ...
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git remote -v
+origin  https://github.com/aravindhrs/Microservices.git (fetch)
+origin  https://github.com/aravindhrs/Microservices.git (push)
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git log
+commit e4cf650014d42482c26b7cbfb1290a91319b1b06
+Author: aravindhrs <aravindhrs@outlook.com>
+Date:   Thu Apr 27 04:51:21 2017 +0530
+
+    Create testfile.txt
+
+commit 3fa68b02967c4d16ca6947c30795e35637ae1df4
+Author: aravindhrs <aravindhrs@outlook.com>
+Date:   Thu Apr 27 04:43:54 2017 +0530
+
+    1st commit
+
+commit 6b7bd4faa6e99c1df2e73ccf9dc69e06c5c6e8fc
+Author: lnc <lnc@DIN76000852.corp.capgemini.com>
+Date:   Mon Apr 24 15:55:18 2017 +0530
+
+    commit
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git diff
+diff --git a/Spring4MVC/src/main/webapp/testfile.txt b/Spring4MVC/src/main/webapp/testfile.txt
+index ce01362..4bff921 100644
+--- a/Spring4MVC/src/main/webapp/testfile.txt
++++ b/Spring4MVC/src/main/webapp/testfile.txt
+@@ -1 +1 @@
+-hello
++hello welcome
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git remote set-url origin "https://github.com/aravindhrs/Microservices.git"
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git pull origin master
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/aravindhrs/Microservices
+ * branch            master     -> FETCH_HEAD
+   e4cf650..5302529  master     -> origin/master
+Updating e4cf650..5302529
+error: Your local changes to the following files would be overwritten by merge:
+        Spring4MVC/src/main/webapp/testfile.txt
+Please commit your changes or stash them before you can merge.
+Aborting
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git commit -m "2nd commit"
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+        modified:   Spring4MVC/src/main/webapp/testfile.txt
+
+no changes added to commit
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git pull origin master
+From https://github.com/aravindhrs/Microservices
+ * branch            master     -> FETCH_HEAD
+Updating e4cf650..5302529
+error: Your local changes to the following files would be overwritten by merge:
+        Spring4MVC/src/main/webapp/testfile.txt
+Please commit your changes or stash them before you can merge.
+Aborting
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git diff
+diff --git a/Spring4MVC/src/main/webapp/testfile.txt b/Spring4MVC/src/main/webapp/testfile.txt
+index ce01362..4bff921 100644
+--- a/Spring4MVC/src/main/webapp/testfile.txt
++++ b/Spring4MVC/src/main/webapp/testfile.txt
+@@ -1 +1 @@
+-hello
++hello welcome
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git add -A
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git pull origin master
+From https://github.com/aravindhrs/Microservices
+ * branch            master     -> FETCH_HEAD
+Updating e4cf650..5302529
+error: Your local changes to the following files would be overwritten by merge:
+        Spring4MVC/src/main/webapp/testfile.txt
+Please commit your changes or stash them before you can merge.
+Aborting
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ pwd
+/d/GitHub/Microservices
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git add testfile.txt
+fatal: pathspec 'testfile.txt' did not match any files
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ git add /src/main/webapp/testfile.txt b/Spring4MVC/src/main/webapp/testfile.txt
+fatal: Could not switch to 'C:/Program Files/Git/src/': No such file or directory
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ cd /src/main/webapp/testfile.txt b/Spring4MVC/src/main/webapp/
+bash: cd: /src/main/webapp/testfile.txt: No such file or directory
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ cd d/GitHub/Microservices/src/main/webapp/testfile.txt b/Spring4MVC/src/main/webapp/
+bash: cd: d/GitHub/Microservices/src/main/webapp/testfile.txt: No such file or directory
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ pwd
+/d/GitHub/Microservices
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ cd /Spring4MVC/src/main/webapp/
+bash: cd: /Spring4MVC/src/main/webapp/: No such file or directory
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ ls
+Spring4MVC/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices (master)
+$ cd Spring4MVC/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC (master)
+$ ls
+pom.xml  src/  Users/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC (master)
+$ cd src
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src (master)
+$ ls
+main/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src (master)
+$ cd main
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main (master)
+$ ls
+java/  webapp/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main (master)
+$ cd webapp/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ ls
+index.jsp  index-Copy.jsp  testfile.txt  WEB-INF/
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git add testfile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git diff
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git commit -m "2nd commit"
+[master 4653673] 2nd commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git remote set-url origin "https://github.com/aravindhrs/Microservices.git"
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git pull origin master
+From https://github.com/aravindhrs/Microservices
+ * branch            master     -> FETCH_HEAD
+Auto-merging Spring4MVC/src/main/webapp/testfile.txt
+CONFLICT (content): Merge conflict in Spring4MVC/src/main/webapp/testfile.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master|MERGING)
+$ git commit -m "2nd commit"
+U       Spring4MVC/src/main/webapp/testfile.txt
+error: commit is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master|MERGING)
+$ git add testfile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master|MERGING)
+$ git commit -m "3rd commit"
+[master 7bfd2fa] 3rd commit
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git remote set-url origin "https://github.com/aravindhrs/Microservices.git"
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git pull origin master
+From https://github.com/aravindhrs/Microservices
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git diff
+diff --git a/Spring4MVC/src/main/webapp/testfile.txt b/Spring4MVC/src/main/webapp/testfile.txt
+index 00e62bd..fd93601 100644
+--- a/Spring4MVC/src/main/webapp/testfile.txt
++++ b/Spring4MVC/src/main/webapp/testfile.txt
+@@ -1,6 +1,4 @@
+-<<<<<<< HEAD
+ hello
+-=======
+ welcome
+ github
+->>>>>>> 5302529328b6225b4b4110ffdbec21fa464e52b6
++end
+\ No newline at end of file
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   testfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git add testfile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git commit -m "4th commit"
+[master 5361ab4] 4th commit
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git push origin master
+Username for 'https://github.com': aravindhrs
+Counting objects: 21, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (21/21), 1.43 KiB | 0 bytes/s, done.
+Total 21 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+To https://github.com/aravindhrs/Microservices.git
+   5302529..5361ab4  master -> master
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git branch
+* master
+  testbranch
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git chekout testbranch
+git: 'chekout' is not a git command. See 'git --help'.
+
+Did you mean this?
+        checkout
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git checkout testbranch
+Switched to branch 'testbranch'
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ touch newFile.txt
+hi
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ hi
+bash: hi: command not found
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ touch newFile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ git diff
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ git status
+On branch testbranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        newFile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ git add newFile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ git commit -m "1st commit for this file via testbranch"
+[testbranch 6fad912] 1st commit for this file via testbranch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Spring4MVC/src/main/webapp/newFile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (testbranch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git branch
+* master
+  testbranch
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git branch --merged
+* master
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git merge testbranch
+Merge made by the 'recursive' strategy.
+ Spring4MVC/src/main/webapp/newFile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Spring4MVC/src/main/webapp/newFile.txt
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git push origin master
+Username for 'https://github.com': aravindhrs
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (13/13), 938 bytes | 0 bytes/s, done.
+Total 13 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/aravindhrs/Microservices.git
+   5361ab4..f343993  master -> master
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git branch -d testbranch
+Deleted branch testbranch (was 6fad912).
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git push origin --delete testbranch
+Username for 'https://github.com': aravindhrs
+error: unable to delete 'testbranch': remote ref does not exist
+error: failed to push some refs to 'https://github.com/aravindhrs/Microservices.git'
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$ git push origin --delete testbranch
+Username for 'https://github.com': aravindhrs
+error: unable to delete 'testbranch': remote ref does not exist
+error: failed to push some refs to 'https://github.com/aravindhrs/Microservices.git'
+
+aravindh@ARAVINDH-RS MINGW64 /d/GitHub/Microservices/Spring4MVC/src/main/webapp (master)
+$
